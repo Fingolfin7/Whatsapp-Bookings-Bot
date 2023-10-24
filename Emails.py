@@ -19,8 +19,8 @@ def send_confirmation_email(date: str | datetime, time: str | datetime, client: 
     if isinstance(time, datetime):
         time = time.strftime("%H:%M")
 
-    SENDGRID_API_KEY = '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'
-    message = Mail(from_email="kuda@softrite.co.zw", to_emails=client.email, subject="Your booking has been confirmed!",
+    SENDGRID_API_KEY = 'YOUR_SENDGRID_API_KEY_HERE'
+    message = Mail(from_email="your_email@address.com", to_emails=client.email, subject="Your booking has been confirmed!",
                    html_content=f'''
                     <!DOCTYPE html>
                     <html>
@@ -101,8 +101,8 @@ def send_cancellation_email(date: str | datetime, time: str | datetime, client: 
     if isinstance(time, datetime):
         time = time.strftime("%H:%M")
 
-    SENDGRID_API_KEY = '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'
-    message = Mail(from_email="kuda@softrite.co.zw", to_emails=client.email, subject="Your booking has been cancelled",
+    SENDGRID_API_KEY = 'YOUR_SENDGRID_API_KEY_HERE'
+    message = Mail(from_email="your_email@address.com", to_emails=client.email, subject="Your booking has been cancelled",
                    html_content=f'''
                     <!DOCTYPE html>
                     <html lang="en">
