@@ -4,10 +4,10 @@ from ClientInfo import ClientInfo
 from datetime import datetime, timedelta
 
 class FirebaseDatabase:
-    def __init__(self, certificate_path="bookings-bot-ac7e9-firebase-adminsdk-xj0e0-7907b48e11.json"):
+    def __init__(self, certificate_path="YOUR_JSON_PATH_HERE.json"):
         self.creds = firebase_admin.credentials.Certificate(certificate_path)
         self.default_app = firebase_admin.initialize_app(self.creds, {
-            'databaseURL': "https://bookings-bot-ac7e9-default-rtdb.firebaseio.com/"})
+            'databaseURL': "YOUR_FIREBASE_DB_LINK_HERE"})
         self.ref = db.reference("/")
         self.create_dates_for_week()
 
