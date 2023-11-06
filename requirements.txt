@@ -6,7 +6,7 @@ Cython==0.29.32
 dl==0.1.0
 docutils==0.19
 firebase_admin==6.1.0
-Flask==2.2.3
+Flask==2.2.5
 HTMLParser==0.0.2
 ipython==8.11.0
 ipywidgets==8.0.5
